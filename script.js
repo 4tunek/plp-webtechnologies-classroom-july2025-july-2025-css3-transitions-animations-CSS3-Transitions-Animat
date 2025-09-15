@@ -46,3 +46,15 @@ function updateUserName() {
 
   let userInfo = getUserInfo();
   console.log(userInfo);
+
+  // Combining CSS Animations with JavaScript
+  const animationBox = document.getElementById('animationBox');
+  const animationBtn = document.getElementById('animationBtn');
+
+  animationBtn.addEventListener('click', () => {
+    animationBox.classList.toggle('animate');
+  });
+
+  
+
+
