@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.smooth-move {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  margin: 50px auto;
+  transition: transform 0.5s ease;
+}
+
+.smooth-move:hover {
+  transform: translateY(-20px);
+}
+
+.slide {
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c;
+  margin: 50px auto;
+  position: relative;
+  animation: slideAnimation 2s infinite alternate;
+}
+
+@keyframes slideAnimation {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(400px);}
+}
+
+
+#animationBtn {
+  margin-left: 50%;
+}
+
+
+.animationBox {
+  width: 100px;
+  height: 100px;
+  background-color: #f39c12;
+  margin: 20px auto;
+  position: relative;
+  animation: moveAndRotate 4s infinite;
+}
+
+@keyframes moveAndRotate {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    background-color: #f39c12;
+  }
+  50% {
+    transform: translateX(200px) rotate(180deg);
+    background-color: #8e44ad;
+  }
+  100% {
+    transform: translateX(400px) rotate(360deg);
+    background-color: #27ae60;
+  }
+}
